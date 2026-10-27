@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#home"> Safa</a>
+                <a href="#about"> About Me </a>
+                <a href="#skills"> Skills</a>
+                <a href="#projects"> Projects </a>
+                <a href="#hobbies"> Hobbies </a>
+                <a href="#contact"> Contact </a>
+                <button id="theme">Change Theme</button>
+            </nav>
+        </header>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <p>This is a brief introduction about myself.</p>
+        </section>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with experience in creating dynamic and responsive websites. I enjoy learning new technologies and improving my skills.</p>
+            <img src="assets/profile.png" alt="My Profile Picture">
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>Here are some of the projects I have worked on:</p>
+            <ul>
+                <li>Project 00 — Linux, Git & GitHub</li>
+                <li>Project 01 — HTML</li>
+                <li>Project 02 — CSS & Visual Presentation</li>
+                <li>Project 03 — JavaScript & Interactivity</li>
+            </ul>
+        </section>
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <p>In my free time, I enjoy:</p>
+            <ul>
+                <li>Reading</li>
+                <li>Traveling</li>
+                <li>Photography</li>
+                <li>Cooking</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>You can reach me at:</p>
+            <ul>
+                <li>Email: <a href="mailto:safaosama@gmail.com">safaosama@gmail.com</a></li>
+                <li>LinkedIn: <a href="https://www.linkedin.com/in/safaosama" target="_blank" rel="noopener noreferrer">Safa Osama</a></li>
+            </ul>
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+        <footer>
+            <p>&copy; 2024 Safa Osama. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
