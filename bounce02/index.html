@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -8,30 +9,147 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="#home" data-i18n="navHome">Safa</a>
+            <a href="#about" data-i18n="navAbout">About Me</a>
+            <a href="#skills" data-i18n="navSkills">Skills</a>
+            <a href="#projects" data-i18n="navProjects">Projects</a>
+            <a href="#hobbies" data-i18n="navHobbies">Hobbies</a>
+            <a href="#contact" data-i18n="navContact">Contact</a>
+
+            <button id="theme" type="button" data-i18n="themeButton">
+                Light Mode
+            </button>
+
+            <button id="photo-switch" type="button" data-i18n="photoButton">
+                Switch Photo
+            </button>
+
+            <button id="language-switch" type="button">
+                العربية
+            </button>
+        </nav>
+    </header>
+
     <main>
-        <div class="controls">
-            <button id="language-button" type="button">العربية</button>
-            <button id="theme-button" type="button">Dark Mode</button>
-        </div>
+        <section id="home">
+            <img
+                id="profile-photo"
+                src="assets/casual.png"
+                alt="Casual profile photo"
+                data-i18n-alt="casualAlt"
+            >
 
-        <h1 id="title">Welcome to My Portfolio</h1>
-        <p id="description">I am a software engineering student.</p>
-
-        <section>
-            <h2 id="about-title">About Me</h2>
-            <p id="about-text">I love programming and learning new technologies.</p>
-            <img src="assets/profile.png" alt="My Profile Picture">
+            <div class="home-text">
+                <h1 data-i18n="homeTitle">Welcome to My Portfolio</h1>
+                <p data-i18n="homeDescription">
+                    I am a software engineering student who loves web development.
+                </p>
+            </div>
         </section>
 
-        <section>
-            <h2 id="skills-title">My Skills</h2>
-            <p id="skills-text">HTML, CSS, JavaScript and Python</p>
+        <section id="about">
+            <h2 data-i18n="aboutTitle">About Me</h2>
+            <p data-i18n="aboutText">
+                I am a software engineering student who enjoys programming,
+                exploring new technologies, and improving my skills.
+            </p>
         </section>
 
-        <section>
-            <h2 id="contact-title">Contact Me</h2>
-            <p id="contact-text">Feel free to get in touch!</p>
+        <section id="skills">
+            <h2 data-i18n="skillsTitle">Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2 data-i18n="projectsTitle">Projects</h2>
+            <p data-i18n="projectsDescription">
+                Here are some of the projects I have worked on:
+            </p>
+            <ul>
+                <li data-i18n="project00">Project 00 — Linux, Git &amp; GitHub</li>
+                <li data-i18n="project01">Project 01 — HTML</li>
+                <li data-i18n="project02">Project 02 — CSS &amp; Visual Presentation</li>
+                <li data-i18n="project03">Project 03 — JavaScript &amp; Interactivity</li>
+            </ul>
+        </section>
+
+        <section id="hobbies">
+            <h2 data-i18n="hobbiesTitle">Hobbies</h2>
+            <p data-i18n="hobbiesDescription">In my free time, I enjoy:</p>
+            <ul>
+                <li data-i18n="hobbyReading">Reading</li>
+                <li data-i18n="hobbyTraveling">Traveling</li>
+                <li data-i18n="hobbyPhotography">Photography</li>
+                <li data-i18n="hobbyCooking">Cooking</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2 data-i18n="contactTitle">Contact</h2>
+            <p data-i18n="contactDescription">You can reach me at:</p>
+
+            <ul>
+                <li>
+                    <span data-i18n="emailLabel">Email:</span>
+                    <a href="mailto:safaosama@gmail.com">safaosama@gmail.com</a>
+                </li>
+                <li>
+                    <span data-i18n="linkedinLabel">LinkedIn:</span>
+                    <a
+                        href="https://www.linkedin.com/in/safaosama"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        data-i18n="linkedinName"
+                    >Safa Osama</a>
+                </li>
+            </ul>
+
+            <form id="contact-form">
+                <label for="name" data-i18n="nameLabel">Your Name:</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    data-i18n-placeholder="namePlaceholder"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <label for="email" data-i18n="emailInputLabel">Your Email:</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    data-i18n-placeholder="emailPlaceholder"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <label for="message" data-i18n="messageLabel">Your Message:</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    data-i18n-placeholder="messagePlaceholder"
+                    placeholder="Your Message"
+                    required
+                ></textarea>
+
+                <button type="submit" data-i18n="sendButton">Send</button>
+            </form>
         </section>
     </main>
+
+    <footer>
+        <p data-i18n="footerText">
+            © 2026 Safa Osama. All rights reserved.
+        </p>
+    </footer>
 </body>
 </html>

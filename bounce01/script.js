@@ -1,3 +1,7 @@
+document.getElementById("theme").addEventListener("click", function() {
+    document.body.classList.toggle("light-theme");
+});
+
 var profilePhoto = document.getElementById("profile-photo");
 var switchButton = document.getElementById("switch-photo");
 
